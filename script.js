@@ -1,5 +1,8 @@
 
-
+var optionUpper = ["ABCDEFGHIJKLMNOPQRSTUVWXYZ"]
+var optionLower = ["abcdefghijklmnopqrstuvwxyz"]
+var optionNumber = ['123456789']
+var optionSpec = ["#$%&)(*+,/:;<=>?@"]
 
 
 function promptCriteria (){
