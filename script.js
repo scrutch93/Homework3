@@ -1,3 +1,13 @@
+
+
+
+
+
+
+function promptCriteria (){
+  prompt("Please select the desired criteria for password");
+}
+
 // Assignment Code
 var generateBtn = document.querySelector("#generate");
 console.log(generateBtn)
@@ -6,18 +16,14 @@ function writePassword() {
   var password = generatePassword();
   var passwordText = document.querySelector("#password");
 
-  if 
-
-  passwordText.value = password;
-
+  
 }
 
 // Add event listener to generate button
-generateBtn.addEventListener("click", writePassword){
-  e.preventDefault()
+generateBtn.addEventListener("click", writePassword)
+  Event.preventDefault()
+  const password = generatePassword (characterAmount, include)
 
 
-  
-}
 
 
