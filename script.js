@@ -8,7 +8,7 @@ function promptCriteria (){
     alert("Error, does not saisty requirements. Please ensure input value is greater than or equal to 8 and less than or equal to 128")
     errorFlag = true;
   }
-  // if it's inbetween 8 and 128 continu else do nothing
+  // if it's inbetween 8 and 128 do this:
   if (errorFlag === false) {
     var hasLowercase = prompt ("Password contains lowercase characters? Type Yes or No.");
     var hasUppercase = prompt ("Password contains uppercase characters? Type Yes or No.");
@@ -16,10 +16,21 @@ function promptCriteria (){
     var hasSpecialCharacters = prompt ("Password contains special characters? Type Yes or No.");
   //lowercase, uppercase, numeric, and/or special characters
     
+    // new if statement that checks all types if they are no set error flag to true
+  
+    if (hasLowercase === "no" && hasUppercase === "no" && hasNumber === "no" && hasSpecialCharacters ==="no") {
+      errorFlag = true;
+      alert("Error, Please select at least one type in order to create a password");
+    }
+
+    if (errorFlag === false) {
+      // gernerate password
+    }
+
 
   }
   else {
-
+ // nothing if errorflag is true
   }
 
 
