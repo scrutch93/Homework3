@@ -1,5 +1,5 @@
 
-//This creates a promt for when the user clicks on the generate button. This also asks them how many characters they would like for their password to be.
+//This creates a promt for when the user clicks on the generate button. This also asks them how many characters they would like for their password to be. 
 function promptCriteria (){
   var passwordLength = prompt("How many characters? ");
   var errorFlag = false; //If the user puts in a value that does not meet the criteria, error message will display.
@@ -10,15 +10,15 @@ function promptCriteria (){
   }
   // if it's inbetween 8 and 128 do this:
   if (errorFlag === false) {
-    var hasLowercase = prompt ("Password contains lowercase characters? Type Yes or No.");
-    var hasUppercase = prompt ("Password contains uppercase characters? Type Yes or No.");
-    var hasNumbers = prompt ("Password contains numbers? Type Yes or No");
-    var hasSpecialCharacters = prompt ("Password contains special characters? Type Yes or No.");
+    // https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/toLowerCase
+    var lowercase = prompt ("Password contains lowercase characters? Type Yes or No.").toLowerCase();
+    var uppercase = prompt ("Password contains uppercase characters? Type Yes or No.").toLowerCase();
+    var numbers = prompt ("Password contains numbers? Type Yes or No").toLowerCase();
+    var specialCharacters = prompt ("Password contains special characters? Type Yes or No.").toLowerCase();
   //lowercase, uppercase, numeric, and/or special characters
     
-    // new if statement that checks all types if they are no set error flag to true
-  
-    if (hasLowercase === "no" && hasUppercase === "no" && hasNumber === "no" && hasSpecialCharacters ==="no") {
+    // new if statement that checks all types if they are no set error flag to true  
+    if (lowercase === "no" && uppercase === "no" && numbers === "no" && specialCharacters ==="no") {
       errorFlag = true;
       alert("Error, Please select at least one type in order to create a password");
     }
@@ -27,7 +27,9 @@ function promptCriteria (){
       var password = "";
       // gernerate password
 
-      alert(password);
+      //password =
+      //alert(lowercase + ' ' + uppercase + ' ' + numbers + ' ' + specialCharacters);
+      //alert(password);
     }
 
 
