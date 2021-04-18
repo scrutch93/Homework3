@@ -10,10 +10,16 @@ function promptCriteria (){
   }
   // if it's inbetween 8 and 128 continu else do nothing
   if (errorFlag === false) {
+    var hasLowercase = prompt ("Password contains lowercase characters? Type Yes or No.");
+    var hasUppercase = prompt ("Password contains uppercase characters? Type Yes or No.");
+    var hasNumbers = prompt ("Password contains numbers? Type Yes or No");
+    var hasSpecialCharacters = prompt ("Password contains special characters? Type Yes or No.");
+  //lowercase, uppercase, numeric, and/or special characters
+    
 
   }
   else {
-    
+
   }
 
 
